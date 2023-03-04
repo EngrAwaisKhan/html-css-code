@@ -1,0 +1,233 @@
+body{
+    height: 100vh;
+}
+.container {
+  width: 65rem;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f2f2f2;
+  /* border: 1px solid black; */
+  box-shadow: 60px 60px 120px silver;
+}
+.leftDiv {
+  display: inline-block;
+  width: 15rem;
+  color: #fcfcfc;
+  padding: 1rem;
+  background-color: #e28525;
+}
+
+.centerDiv {
+  display: inline-block;
+  width: 15rem;
+  color: #fcfcfc;
+  padding: 1rem;
+  background-color: #016972;
+}
+
+.rightDiv {
+  display: inline-block;
+  width: 15rem;
+  color: #fcfcfc;
+  padding: 1rem;
+  background-color: #00403f;
+}
+
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: grey;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.btn {
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 25px;
+  border: none;
+  color: #e28525;
+  cursor: pointer;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  background-color: #e28525;
+  color: white;
+  border: 1px solid white;
+}
+.btn1 {
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 25px;
+  border: none;
+  color: #016972;
+  cursor: pointer;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.btn1:hover {
+  background-color: #016972;
+  color: white;
+  border: 1px solid white;
+}
+.btn2 {
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 25px;
+  border: none;
+  color: #00403f;
+  cursor: pointer;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.btn2:hover {
+  background-color: #00403f;
+  color: white;
+  border: 1px solid white;
+}
+
+.right_circleGrp{
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: -15px;
+}
+
+.dots{
+    height: 18px;
+    width: 18px;
+    background-color:#65c7da;;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle{
+    position: relative;
+    margin-top:-8rem;
+    margin-left:65rem;
+    width: 15rem;
+    height: 15rem;
+    border: 7px solid rgb(147, 187, 246);
+    opacity: 0.2;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: -1;
+}
+
+/* MEDIA QUERIES */
+/* +++++++++++MEDIA QUERIES++++++++++++++++ */
+
+@media screen and (max-width: 414px)  {
+    .container {
+        width: 12rem;
+        display: block;
+        padding: 2rem;
+        margin-bottom: 5rem;
+    }   
+
+    .leftDiv {
+        display:block;
+        width: 12rem;
+        min-height: 12rem;
+    }
+    .para{
+        font-size: 16px;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 14px;
+    }
+    .centerDiv {
+        display: block;
+        width: 12rem;
+        min-height: 12rem;
+    }
+    .btn1{
+        width: 8rem;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 14px;
+    }
+    .rightDiv {
+        display: block;
+        width: 12rem;
+        min-height: 12rem;
+    }
+    .btn2{
+        width: 8rem;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 14px;
+    }
+    .circle{
+        position: relative;
+        margin-top:-10rem;
+        margin-left:15rem;
+        width: 9rem;
+        height: 9rem;
+        border: 7px solid rgb(147, 187, 246);
+        opacity: 0.5;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: -1;
+    }
+    .right_circleGrp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: -14px;
+    }
+    
+    .dots{
+        height: 10px;
+        width: 10px;
+        background-color:#65c7da;;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:820px) and (min-width:768px) {
+    .container {
+        width: 55rem;
+        margin-left: 2rem;
+      }
+      .para{
+        font-size: 25px;
+      }
+      .circle{
+        position: relative;
+        margin-top:-8rem;
+        margin-left:45rem;
+        width: 15rem;
+        height: 15rem;
+        border: 12px solid rgb(147, 187, 246);
+        opacity: 0.2;
+        border-radius: 50%;
+        /* display: inline-block; */
+        z-index: -1;
+    }
+
+    .right_circleGrp{
+        position: absolute;
+        margin-top: 8rem;
+        margin-left: -18px;
+    }
+
+    .btn, .btn1, .btn2{
+        width: 10rem;
+        height: 3rem;
+        font-size: 20px;
+    }
+}
